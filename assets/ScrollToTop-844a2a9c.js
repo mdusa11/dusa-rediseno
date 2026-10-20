@@ -1,0 +1,6 @@
+import{c as n,u as l,r as o,j as e,L as c,d,A as u,m as p}from"./index-d742ca0f.js";/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const m=n("ChevronUp",[["path",{d:"m18 15-6-6-6 6",key:"153udz"}]]);function x(){const s=l(),[r,a]=o.useState(!1);o.useEffect(()=>{const t=()=>a(window.scrollY>400);return window.addEventListener("scroll",t,{passive:!0}),()=>window.removeEventListener("scroll",t)},[]);const i=()=>window.scrollTo({top:0,behavior:"smooth"});return e.jsx(c,{features:d,children:e.jsx(u,{children:r&&e.jsx(p.button,{initial:{opacity:0,scale:.95,y:10},animate:{opacity:1,scale:1,y:0},exit:{opacity:0,scale:.95,y:10},transition:{duration:.25},onClick:i,"aria-label":s("app.to_top"),type:"button",className:"fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-50 size-11 rounded-full flex items-center justify-center text-slate-700 hover:text-slate-900 transition-all duration-200 hover:border-blue-500/40 hover:shadow-[0_0_20px_rgba(48,144,213,0.25)]",style:{background:"rgba(255,255,255,0.92)",border:"1px solid #E5E7EB",backdropFilter:"blur(8px)"},children:e.jsx(m,{size:18})})})})}export{x as default};

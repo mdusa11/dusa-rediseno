@@ -1,0 +1,21 @@
+{
+  "name": "Dusa Solutions",
+  "short_name": "Dusa",
+  "description": "Estudio de apps hechas para México: las nuestras (BathMap, Blokku, Fakturo) y la tuya.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F9FAFB",
+  "theme_color": "#3090D5",
+  "orientation": "portrait-primary",
+  "lang": "es-MX",
+  "categories": ["business", "productivity", "developer"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

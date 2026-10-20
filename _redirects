@@ -1,0 +1,4 @@
+# Las rutas públicas se prerenderizan a HTML (scripts/prerender.mjs); lo demás cae en 404.html.
+# Alias viejos de casos en inglés
+/en/casos      /en/cases        301
+/en/caso/*     /en/case/:splat  301

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head><meta name="robots" content="noindex">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons & Icons -->
+    <link rel="icon" type="image/svg+xml" href="/dusa-rediseno/favicon.svg" />
+    <link rel="apple-touch-icon" href="/dusa-rediseno/favicon.svg" />
+    <link rel="mask-icon" href="/dusa-rediseno/favicon.svg" color="#3090D5" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/dusa-rediseno/manifest.webmanifest" />
+    <meta name="theme-color" content="#F9FAFB" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Dusa Solutions" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Dusa Solutions" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://dusasolutions.com/" />
+
+    <!-- SEO -->
+    <meta name="description" content="Dusa Solutions — Estudio de apps en Guadalajara: creamos BathMap, Blokku, Cumplegratis y Fakturo, y construimos webs y apps a la medida para tu negocio." />
+    <meta name="keywords" content="estudio de apps, apps hechas en México, desarrollo de apps, desarrollo web, Flutter, Next.js, Supabase, Guadalajara, México, BathMap, Blokku, Cumplegratis, Fakturo, promos de cumpleaños, software a medida" />
+    <meta name="author" content="Dusa Solutions" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="MX-JAL" />
+    <meta name="geo.placename" content="Guadalajara" />
+    <meta name="geo.position" content="20.6597;-103.3496" />
+    <meta name="ICBM" content="20.6597, -103.3496" />
+
+    <!-- Google Search Console verification (verificado vía DNS TXT, no requiere meta) -->
+    <!-- <meta name="google-site-verification" content="TU_CODIGO_AQUI" /> -->
+
+    <!-- Bing Webmaster Tools verification -->
+    <meta name="msvalidate.01" content="0C3C09C9BAD1428249249A2FB12FC0DA" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dusa Solutions | Estudio de apps hechas en México" />
+    <meta property="og:description" content="Estudio de apps en Guadalajara: creamos BathMap, Blokku, Cumplegratis y Fakturo, y construimos webs y apps a la medida para tu negocio." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dusasolutions.com/" />
+    <meta property="og:image" content="https://dusasolutions.com/og-estudio.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dusa Solutions — Estudio de apps hechas en México" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:site_name" content="Dusa Solutions" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@dusasolutions" />
+    <meta name="twitter:creator" content="@dusasolutions" />
+    <meta name="twitter:title" content="Dusa Solutions | Estudio de apps hechas en México" />
+    <meta name="twitter:description" content="Estudio de apps en Guadalajara: creamos BathMap, Blokku, Cumplegratis y Fakturo, y construimos webs y apps a la medida para tu negocio." />
+    <meta name="twitter:image" content="https://dusasolutions.com/og-estudio.jpg" />
+    <meta name="twitter:image:alt" content="Dusa Solutions — Estudio de apps hechas en México" />
+
+    <!-- Fuentes auto-hospedadas (@fontsource en main.jsx); el prerender agrega preload -->
+    <link rel="dns-prefetch" href="https://formspree.io" />
+
+    <!-- Analytics (GA4 + Clarity): solo si el usuario acepta en el banner de cookies -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      // Sin consentimiento no se encola nada: GA no debe recibir eventos previos a aceptar
+      window.trackEvent = function(name, params) {
+        if (window.__analyticsOn) gtag('event', name, params || {});
+      };
+
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (!link) return;
+        var href = link.href || '';
+        if (href.includes('wa.me') || href.includes('whatsapp')) {
+          window.trackEvent('whatsapp_click', { link_url: href });
+        } else if (href.includes('calendly.com')) {
+          window.trackEvent('calendly_click', { link_url: href });
+        } else if (href.startsWith('mailto:')) {
+          window.trackEvent('email_click', { link_url: href });
+        } else if (href.startsWith('tel:')) {
+          window.trackEvent('phone_click', { link_url: href });
+        }
+      }, { passive: true });
+
+      // La llama el banner al aceptar, o este script si ya había aceptado antes
+      window.loadAnalytics = function() {
+        if (window.__analyticsOn) return;
+        window.__analyticsOn = true;
+
+        var ga = document.createElement('script');
+        ga.async = true;
+        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-DF1JXNVLCB';
+        document.head.appendChild(ga);
+        gtag('js', new Date());
+        gtag('config', 'G-DF1JXNVLCB');
+
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "wr2ol8l4b2");
+      };
+
+      var consent = null;
+      try { consent = localStorage.getItem('dusa_consent'); } catch (e) {}
+      if (consent === 'granted') {
+        if ('requestIdleCallback' in window) requestIdleCallback(window.loadAnalytics, { timeout: 3000 });
+        else window.addEventListener('load', function() { setTimeout(window.loadAnalytics, 2000); }, { once: true });
+      }
+    </script>
+
+    <title>Dusa Solutions | Estudio de apps hechas en México</title>
+
+    <!-- Schema global: Organization, LocalBusiness, WebSite. Lo específico de cada página (FAQ, BlogPosting…) lo inyecta <SEO>. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://dusasolutions.com/#org",
+          "name": "Dusa Solutions",
+          "alternateName": "DUSA",
+          "url": "https://dusasolutions.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dusasolutions.com/favicon.svg",
+            "width": 512,
+            "height": 512
+          },
+          "description": "Estudio de apps hechas en México: productos propios (BathMap, Blokku, Cumplegratis, Fakturo) y desarrollo de webs y apps a la medida para negocios.",
+          "foundingDate": "2024",
+          "founder": { "@type": "Person", "name": "Manuel Sánchez" },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Guadalajara",
+            "addressRegion": "Jalisco",
+            "addressCountry": "MX"
+          },
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "contacto@dusasolutions.com",
+            "telephone": "+52-311-485-7991",
+            "availableLanguage": ["Spanish", "English"],
+            "areaServed": ["MX", "US", "LATAM"]
+          }],
+          "sameAs": [
+            "https://x.com/dusasolutions",
+            "https://www.linkedin.com/company/dusasolutionsmx/"
+          ]
+        },
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://dusasolutions.com/#business",
+          "name": "Dusa Solutions",
+          "url": "https://dusasolutions.com",
+          "image": "https://dusasolutions.com/og-estudio.jpg",
+          "priceRange": "$$",
+          "telephone": "+52-311-485-7991",
+          "email": "contacto@dusasolutions.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Guadalajara",
+            "addressRegion": "Jalisco",
+            "addressCountry": "MX"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 20.6597,
+            "longitude": -103.3496
+          },
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          }],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios digitales",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Desarrollo Web", "description": "Aplicaciones web con React, Next.js y tecnologías de última generación.", "provider": { "@id": "https://dusasolutions.com/#org" } },
+                "priceSpecification": { "@type": "PriceSpecification", "price": "1500", "priceCurrency": "MXN" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Apps Móviles", "description": "Aplicaciones nativas y cross-platform con Flutter para iOS y Android.", "provider": { "@id": "https://dusasolutions.com/#org" } },
+                "priceSpecification": { "@type": "PriceSpecification", "price": "8500", "priceCurrency": "MXN" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Diseño UI/UX", "description": "Diseño centrado en el usuario con Figma y Framer.", "provider": { "@id": "https://dusasolutions.com/#org" } },
+                "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "MXN" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "E-commerce", "description": "Tiendas online con Stripe, MercadoPago y los mejores gateways.", "provider": { "@id": "https://dusasolutions.com/#org" } },
+                "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "MXN" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Consultoría Tech", "description": "Asesoría estratégica de stack y arquitectura.", "provider": { "@id": "https://dusasolutions.com/#org" } },
+                "priceSpecification": { "@type": "PriceSpecification", "price": "500", "priceCurrency": "MXN" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Automatización", "description": "Bots, APIs e integraciones que ahorran tiempo y reducen costos.", "provider": { "@id": "https://dusasolutions.com/#org" } },
+                "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "MXN" }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://dusasolutions.com/#website",
+          "url": "https://dusasolutions.com",
+          "name": "Dusa Solutions",
+          "inLanguage": "es-MX",
+          "publisher": { "@id": "https://dusasolutions.com/#org" }
+        }
+      ]
+    }
+    </script>
+    <script type="module" crossorigin src="/dusa-rediseno/assets/index-d742ca0f.js"></script>
+    <link rel="stylesheet" href="/dusa-rediseno/assets/index-3fe421c0.css">
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+    <div id="root"></div>
+    
+  </body>
+</html>
